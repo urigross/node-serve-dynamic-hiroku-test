@@ -30,6 +30,8 @@ function logger(req, res, next){
 }
 
 
-app.listen(3000);
-console.log('Open browser at localhost:3000');
+//app.listen(3000);
+app.listen(process.env.PORT || 3000); // For heroku & localhost
+//app.listen(3000); // For local host
+ console.log('Open browser at localhost:3000');
 
